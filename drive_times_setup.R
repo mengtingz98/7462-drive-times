@@ -3,6 +3,7 @@ library(ggplot2)
 library(googleway)
 library(lubridate)
 library(purrr)
+library(tidyr)
 
 ## Helper function to get the drive time minutes from the object returned by `google_directions`
 ## Do not edit!
@@ -47,3 +48,4 @@ get_route_polyline <- function(orig, dest) {
   
   return(dir$routes$overview_polyline)
 }
+
